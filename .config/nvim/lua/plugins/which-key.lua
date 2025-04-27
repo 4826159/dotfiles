@@ -52,7 +52,7 @@ return { -- Useful plugin to show you pending keybinds.
             { '<leader>w', group = '[W]orkspace' },
             { '<leader>W', group = 'Vim[W]iki' },
             { '<leader>t', group = '[T]oggle' },
-            { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+            { '<leader>h', group = '[G]it', mode = { 'n', 'v' } },
         },
     },
 }
