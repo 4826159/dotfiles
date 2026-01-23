@@ -35,6 +35,10 @@ return {
                 vim.keymap.set("n", "<leader>gd1", function()
                     gs.diffthis("~1")
                 end, vim.tbl_extend("force", opts, { desc = "Diff against previous commit" }))
+                vim.keymap.set("n", "<leader>gs", gs.stage_hunk, vim.tbl_extend("force", opts, { desc = "Stage hunk" }))
+                vim.keymap.set("v", "<leader>gs", function()
+                    gs.stage_hunk { vim.fn.line("."), vim.fn.line("v") }
+                end, vim.tbl_extend("force", vopts, { desc = "Stage hunk (range)" }))
 
                 -- Blame checkout for the commit at the line
                 vim.keymap.set("n", "<leader>gcb", function()
