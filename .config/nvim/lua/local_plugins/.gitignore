@@ -1,3 +1,5 @@
 *.lua
 
 !.ignore.lua
+!init.lua
+!example.lua
