@@ -10,6 +10,7 @@ local plugins = {
     { src = 'https://github.com/tpope/vim-fugitive' },
     { src = 'https://github.com/lewis6991/gitsigns.nvim' },
     { src = 'https://github.com/tpope/vim-sleuth.git' },
+    { src = 'https://github.com/mason-org/mason.nvim.git' },
 }
 
 local local_plugins = nil

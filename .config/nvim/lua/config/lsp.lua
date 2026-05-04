@@ -75,3 +75,4 @@ end
 
 enable_if_available('lua_ls')
 enable_if_available('clangd')
+enable_if_available('bashls')
